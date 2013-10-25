@@ -1,5 +1,10 @@
 extends ../layout
 
+
+
+
+
+
 block content
 	h1 Users
 		table(class='table  table-condensed table-hover')
@@ -10,11 +15,13 @@ block content
 					td logout
 
 			for guard in guards
+				- var name = guard.email;
+
 				tr
-					td= guard.email
+					td= name
 					td= guard.cp
 					td
-						button(class="btn btn-success") send message
+						button(id=name,class="btn btn-success") send message 
 					td
 						button(class="btn btn-danger") logout
 

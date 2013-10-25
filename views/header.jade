@@ -1,5 +1,5 @@
 head
-	title Jade Example
+	title Devices Monitor
 	link(rel="stylesheet", href="/stylesheets/style.css")
 
 
@@ -7,5 +7,16 @@ head
 
 	link(rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css")
 
-	script(src='/javascripts/jquery-1.7.min.js')
+	script(src="//code.jquery.com/jquery.js")
 	script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+	script
+		$(document).ready(function(){
+			$("button").click(function() {
+				var msg=prompt("Please Enter The Message");
+				if (msg!=null)
+				{
+				}
+
+			});
+		});
